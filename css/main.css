@@ -1,0 +1,173 @@
+/*CSS fra https://arstechnica.com/gaming/2023/09/record-breaking-super-mario-bros-speedrun-approaches-robotic-perfection/*/
+
+#header {
+    background-color: var(--siteburgundy);
+    color:aliceblue;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+   
+  }
+
+
+.nav{
+    background-color: #caf1b8;
+    
+}
+
+body{
+    background-color: rgb(197, 233, 240);
+    
+}
+
+
+h1, h2{
+    font-family: bitter;
+    font-weight: 400;
+}
+
+h1{
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.15em;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h2{
+    margin-top: 20px;
+    font-size: 26px;
+    line-height: 1.23em;
+    box-sizing: inherit;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3{
+    font-family: bitter;
+    font-weight: 600;
+}
+
+div{
+    border-radius: 0;
+    padding: 10;
+    margin: 0;
+    text-align:center;
+}
+
+.employees{
+    color: rgb(0, 0, 0);
+}
+
+.mørkere-farge{
+    color: #000000;
+}
+
+.fit{
+    margin: 0;
+    max-width: 99%;
+    max-height: 99%;
+    color: rgb(0, 0, 0);
+}
+
+
+/* css fra https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals  men vi har den i css i steden for html*/
+.mission {
+    background-color: #ff7272;
+    color: #ffffff;
+    border: 2px solid #000000;
+    margin: 20px;
+    padding: 20px;
+}
+  
+.companys-about {
+    background-color: #ff7272;
+    color: #ffffff;
+    border: 2px solid #000000;
+    margin: 20px;
+    padding:20px;
+}
+.submit {
+    background-color: #ff7272;
+    color: #ffffff;
+    border: 2px solid #000000;
+    margin: 20px;
+    padding: 20px;
+}
+
+#produkter{
+    background-color: rgb(48, 167, 167);
+    padding: 20px;
+    border-radius: 0;
+    /**margin-right: 720px;
+    margin-left:700px;
+    **/
+    text-align:center;
+    color:black; 
+}
+
+
+/** Hamburger menu ala Tengel **/
+
+#burger-toggle{display:none;} 
+
+@media (min-width: 701px){
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    right: 0;
+  }
+  
+
+  .menu li{padding-right: 4rem;}
+}
+
+@media (max-width: 700px){
+  .menu{
+    list-style-type: none;
+    position: sticky;
+    padding-left: 0px;
+    background-color: (113, 113, 207);
+    
+  }
+  .logo {
+    display: none
+  }
+  
+  .menu-icon{
+    display: block;
+    background-image: url(../image/burgermenu1.svg);
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    
+  }
+
+  .hamburger-toggle-container {cursor: pointer;}
+
+  .menu li {
+    height: 0px;
+    overflow: hidden;
+    margin-top: 20;
+    margin-bottom: 20;
+  }
+
+  #burger-toggle:checked ~ .menu li{
+      height: 1rem;
+      width: auto;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      background-color: var(--siteburgundy);
+  }
+
+  nav{
+    display: flex;
+    height: 40px;
+    margin-top: 3;
+    
+  }
+}
